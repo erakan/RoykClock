@@ -1,0 +1,159 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Turkish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_TRK)
+#ifdef _WIN32
+LANGUAGE LANG_TURKISH, SUBLANG_DEFAULT
+#pragma code_page(1254)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+IDR_ALARM               WAVE    DISCARDABLE     "SOUNDS\\alarm.wav"
+IDR_FALLOW              WAVE    DISCARDABLE     "SOUNDS\\fallow.wav"
+IDR_KICKASS             WAVE    DISCARDABLE     "SOUNDS\\kickass.wav"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+ID_ALARM DIALOGEX 0, 0, 163, 151
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Add/Remove Alarms"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "&Current Alarms:",-1,7,7,50,9
+    CONTROL         "DateTimePicker1",IDC_ALARMTIME,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | DTS_LONGDATEFORMAT | 
+                    WS_TABSTOP,54,93,45,16,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "&Add Alarm",IDC_SETALARM,102,93,54,16,0,
+                    WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "OK",1,55,130,50,14
+    CTEXT           "Choose Time:",-1,7,93,46,16,SS_CENTERIMAGE
+    LTEXT           "Tip:\nTo remove an alarm, double click to it.",-1,7,110,
+                    149,16,0,WS_EX_TRANSPARENT
+    LISTBOX         IDC_LIST,7,16,149,72,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP,WS_EX_LEFTSCROLLBAR
+END
+
+IDD_ABOUT DIALOGEX 0, 0, 199, 87
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Erdinc AKAN Clock, About..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Have a\nnice day!",1,142,43,50,37,BS_CENTER | 
+                    BS_VCENTER | BS_MULTILINE,WS_EX_DLGMODALFRAME
+    ICON            IDI_APPICON,-1,15,15,20,20
+    CTEXT           "Erdinc AKAN Clock, Written in Pure C++",-1,47,10,136,14,
+                    SS_CENTERIMAGE,WS_EX_DLGMODALFRAME
+    CTEXT           "More than 6 files over 1000 lines...",-1,47,25,136,14,
+                    SS_CENTERIMAGE | SS_SUNKEN,WS_EX_DLGMODALFRAME
+    CTEXT           "Inspired from Royksopp's awared\n""Remind Me"" video \nHope you enjoyed it as much as \nI'm creating it ;)",
+                    -1,7,43,129,37,SS_SUNKEN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_APPICON             ICON    DISCARDABLE     "Res_GUI\\Clock.ico"
+IDI_TRAYICON            ICON    DISCARDABLE     "Res_GUI\\trayicon.ico"
+IDI_TRAYICON_D          ICON    DISCARDABLE     "Res_GUI\\ico00001.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_HAND                CURSOR  DISCARDABLE     "Res_GUI\\tut.cur"
+IDC_TUT                 CURSOR  DISCARDABLE     "Res_GUI\\HAND-RL.CUR"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    ID_ALARM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Turkish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
