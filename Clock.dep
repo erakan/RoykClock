@@ -1,0 +1,12 @@
+# Microsoft Developer Studio Generated Dependency File, included by Clock.mak
+
+.\Clock.cpp : \
+	".\Clock.h"\
+	".\Resource.h"\
+	"d:\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\Clock.rc : \
+	".\Clock.ico"\
+	".\Resource.h"\
+	
